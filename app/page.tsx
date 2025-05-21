@@ -410,6 +410,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <Button
+                  variant="outline"
                   size="lg"
                   className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
                   onClick={() => {
@@ -422,19 +423,6 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
 
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-blue-400/30 text-blue-100 hover:bg-blue-800/20 text-lg h-14 px-8 rounded-full flex items-center gap-2"
-                  onClick={() => {
-                    if (videoRef.current) {
-                      videoRef.current.scrollIntoView({ behavior: "smooth" })
-                    }
-                  }}
-                >
-                  <Play className="h-5 w-5 text-[#ffd700]" fill="#ffd700" />
-                  Ver Vídeo
-                </Button>
               </div>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-blue-200">
