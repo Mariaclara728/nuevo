@@ -543,6 +543,12 @@ export default function Home() {
               </div>
             </div>
 
+          {/* Contador regressivo */}
+          <div className="max-w-4xl mx-auto mb-8 bg-blue-900/30 border border-blue-800/50 rounded-lg p-3 text-center">
+            <p className="text-blue-200 text-sm mb-1">ESTA OFERTA ESPECIAL EXPIRA EM:</p>
+            <CountdownTimer />
+          </div>
+
             {/* Primeira CTA */}
             <div className="bg-blue-900/30 border border-blue-800 rounded-lg p-6 md:p-8 text-center">
               <div className="mb-6">
