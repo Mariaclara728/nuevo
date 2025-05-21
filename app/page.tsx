@@ -445,6 +445,84 @@ export default function Home() {
               </div>
             </div>
 
+                  {/* Terceira Dobra - O Que Você Vai Aprender */}
+      <section className="py-16 bg-gradient-to-b from-[#001845] to-[#001233]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <Badge className="mb-4 bg-blue-900/50 text-blue-300 hover:bg-blue-900/50 border border-blue-800">
+              TRANSFORMAÇÃO COMPLETA
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              O Que Você Vai <span className="text-[#ffd700]">Aprender</span>
+            </h2>
+            <p className="text-xl text-blue-200">Domine estas 6 áreas essenciais e transforme completamente sua vida</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                title: "Controle Emocional",
+                description:
+                  "Aprenda a responder em vez de reagir às situações, mantendo a calma mesmo nos momentos mais difíceis.",
+                icon: <Brain className="h-8 w-8 text-[#ffd700]" />,
+              },
+              {
+                title: "Foco no Essencial",
+                description:
+                  "Identifique o que realmente está sob seu controle e pare de desperdiçar energia com o que não pode mudar.",
+                icon: <Target className="h-8 w-8 text-[#ffd700]" />,
+              },
+              {
+                title: "Resiliência Mental",
+                description:
+                  "Desenvolva uma mente inabalável que permanece forte e clara mesmo diante das maiores adversidades.",
+                icon: <Zap className="h-8 w-8 text-[#ffd700]" />,
+              },
+              {
+                title: "Relacionamentos Saudáveis",
+                description:
+                  "Transforme suas interações com os outros através da compreensão, paciência e comunicação efetiva.",
+                icon: <Heart className="h-8 w-8 text-[#ffd700]" />,
+              },
+              {
+                title: "Clareza de Propósito",
+                description:
+                  "Descubra seu propósito de vida e alinhe suas ações diárias com seus valores mais profundos.",
+                icon: <Lightbulb className="h-8 w-8 text-[#ffd700]" />,
+              },
+              {
+                title: "Produtividade Superior",
+                description:
+                  "Elimine a procrastinação e desenvolva uma disciplina inabalável para realizar o que realmente importa.",
+                icon: <Flame className="h-8 w-8 text-[#ffd700]" />,
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-blue-900/20 border border-blue-800 rounded-lg p-6 hover:bg-blue-900/30 transition-all duration-300 hover:scale-105 hover:border-blue-700"
+              >
+                <div className="bg-blue-900/50 rounded-full p-3 w-16 h-16 flex items-center justify-center mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-blue-200">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button
+              size="lg"
+              className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
+              onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
+            >
+              QUERO ESTAS HABILIDADES
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
             <div className="w-full lg:w-1/2 relative">
               <div className="relative mx-auto max-w-md">
                 {/* Decorative elements */}
@@ -595,83 +673,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Terceira Dobra - O Que Você Vai Aprender */}
-      <section className="py-16 bg-gradient-to-b from-[#001845] to-[#001233]">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <Badge className="mb-4 bg-blue-900/50 text-blue-300 hover:bg-blue-900/50 border border-blue-800">
-              TRANSFORMAÇÃO COMPLETA
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              O Que Você Vai <span className="text-[#ffd700]">Aprender</span>
-            </h2>
-            <p className="text-xl text-blue-200">Domine estas 6 áreas essenciais e transforme completamente sua vida</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              {
-                title: "Controle Emocional",
-                description:
-                  "Aprenda a responder em vez de reagir às situações, mantendo a calma mesmo nos momentos mais difíceis.",
-                icon: <Brain className="h-8 w-8 text-[#ffd700]" />,
-              },
-              {
-                title: "Foco no Essencial",
-                description:
-                  "Identifique o que realmente está sob seu controle e pare de desperdiçar energia com o que não pode mudar.",
-                icon: <Target className="h-8 w-8 text-[#ffd700]" />,
-              },
-              {
-                title: "Resiliência Mental",
-                description:
-                  "Desenvolva uma mente inabalável que permanece forte e clara mesmo diante das maiores adversidades.",
-                icon: <Zap className="h-8 w-8 text-[#ffd700]" />,
-              },
-              {
-                title: "Relacionamentos Saudáveis",
-                description:
-                  "Transforme suas interações com os outros através da compreensão, paciência e comunicação efetiva.",
-                icon: <Heart className="h-8 w-8 text-[#ffd700]" />,
-              },
-              {
-                title: "Clareza de Propósito",
-                description:
-                  "Descubra seu propósito de vida e alinhe suas ações diárias com seus valores mais profundos.",
-                icon: <Lightbulb className="h-8 w-8 text-[#ffd700]" />,
-              },
-              {
-                title: "Produtividade Superior",
-                description:
-                  "Elimine a procrastinação e desenvolva uma disciplina inabalável para realizar o que realmente importa.",
-                icon: <Flame className="h-8 w-8 text-[#ffd700]" />,
-              },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="bg-blue-900/20 border border-blue-800 rounded-lg p-6 hover:bg-blue-900/30 transition-all duration-300 hover:scale-105 hover:border-blue-700"
-              >
-                <div className="bg-blue-900/50 rounded-full p-3 w-16 h-16 flex items-center justify-center mb-4">
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-blue-200">{item.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Button
-              size="lg"
-              className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
-              onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
-            >
-              QUERO ESTAS HABILIDADES
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
       <section className="py-16 bg-[#001233]">
