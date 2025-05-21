@@ -1153,7 +1153,7 @@ export default function Home() {
               <Button
                 size="lg"
                 className="w-full bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4"
-                onClick={simulatePurchase}
+                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
                 QUERO TRANSFORMAR MINHA MENTE POR APENAS R$47
                 <ArrowRight className="ml-2 h-6 w-6" />
