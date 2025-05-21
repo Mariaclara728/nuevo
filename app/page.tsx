@@ -538,7 +538,7 @@ export default function Home() {
               <div className="absolute -inset-1 bg-gradient-to-r from-[#ffd700] to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative bg-blue-900/50 border-2 border-blue-800 rounded-lg overflow-hidden aspect-video">
                 <Image
-                  src="/placeholder.svg?height=720&width=1280&text=Vídeo+de+Apresentação"
+                  src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/imagem_gerada-2025-05-21T152010.227.png"
                   alt="Thumbnail do vídeo"
                   width={1280}
                   height={720}
