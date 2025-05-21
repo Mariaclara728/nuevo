@@ -377,11 +377,6 @@ export default function Home() {
 
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <div className="inline-block mb-6">
-                <Badge className="bg-blue-500/20 text-blue-300 hover:bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-1 text-sm">
-                  ACESSO IMEDIATO
-                </Badge>
-              </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 <span className="block text-white">DOMINE SUA MENTE </span>
@@ -535,6 +530,12 @@ export default function Home() {
 <section className="py-16 bg-[#001845]" ref={videoRef}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+
+              <div className="inline-block mb-6">
+                <Badge className="bg-blue-500/20 text-blue-300 hover:bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-1 text-sm">
+                  ACESSO IMEDIATO
+                </Badge>
+              </div>
 
           {/* Contador regressivo */}
           <div className="max-w-4xl mx-auto mb-8 bg-blue-900/30 border border-blue-800/50 rounded-lg p-3 text-center">
