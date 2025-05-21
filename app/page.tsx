@@ -545,11 +545,6 @@ export default function Home() {
                   allowFullScreen
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="bg-[#ffd700]/90 hover:bg-[#ffd700] text-[#001233] rounded-full w-20 h-20 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 group-hover:scale-110">
-                    <Play className="h-10 w-10 ml-1" fill="#001233" />
-                  </button>
-                </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#001233] to-transparent p-4">
                   <p className="text-white font-medium text-center">
                     Assista ao vídeo para descobrir como o Manual Estoico pode transformar sua vida
