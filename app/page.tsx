@@ -378,10 +378,12 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             <div className="w-full lg:w-1/2 text-center lg:text-left">
 
-              <p><h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                <span className="block text-white">DOMINE SUA MENTE </span>
-                <span className="block text-[#ffd700]">CONTROLE SUA VIDA</span>
-              </h1></p>
+              <div className="w-full lg:w-1/2 text-center lg:text-left mb-4">
+  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+    <span className="block text-white">DOMINE SUA MENTE </span>
+    <span className="block text-[#ffd700]">CONTROLE SUA VIDA</span>
+  </h1>
+</div>
 
             {/* Vídeo de apresentação */}
             <div className="relative mb-12 group">
