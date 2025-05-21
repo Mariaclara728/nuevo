@@ -495,7 +495,7 @@ export default function Home() {
                 {/* Price tag */}
                 <div className="absolute -top-4 -right-4 bg-[#ffd700] text-[#001233] font-bold px-4 py-2 rounded-full shadow-lg transform rotate-12 z-10">
                   <div className="text-xs line-through">R$197</div>
-                  <div className="text-xl">R$47</div>
+                  <div className="text-xl">R$67</div>
                 </div>
 
                 {/* Play button overlay */}
@@ -554,7 +554,7 @@ export default function Home() {
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                   Transforme Sua Mente Por Apenas{" "}
                   <span className="text-[#ffd700]">
-                    R$47<span className="text-sm align-top ml-1">à vista</span>
+                    R$67<span className="text-sm align-top ml-1">à vista</span>
                   </span>
                 </h2>
                 <p className="text-xl text-blue-200">ou em até 12x de R$4,70 no cartão</p>
@@ -898,7 +898,7 @@ export default function Home() {
             {/* CTA Intermediária */}
             <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Tudo Isso Por Apenas <span className="text-[#ffd700]">R$47</span>
+                Tudo Isso Por Apenas <span className="text-[#ffd700]">R$67</span>
               </h3>
               <p className="text-xl text-blue-200 mb-6">
                 Menos que o preço de um jantar para transformar sua mente para sempre
@@ -934,7 +934,7 @@ export default function Home() {
               Pessoas Comuns, <span className="text-[#ffd700]">Resultados Extraordinários</span>
             </h2>
             <p className="text-xl text-blue-200">
-              Depoimentos não editados de pessoas que investiram apenas R$47 no Manual Estoico
+              Depoimentos não editados de pessoas que investiram apenas R$67 no Manual Estoico
             </p>
           </div>
 
@@ -1048,7 +1048,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto space-y-4 mb-16">
             {[
               {
-                question: "O que exatamente eu recebo por R$47?",
+                question: "O que exatamente eu recebo por R$67?",
                 answer:
                   "Você recebe o Manual Estoico Digital completo com 7 módulos, 21 exercícios práticos diários, 7 meditações estoicas em PDF, acesso ao grupo privado de praticantes, e todos os 5 bônus exclusivos. Todo o material tem acesso vitalício.",
               },
@@ -1172,7 +1172,7 @@ export default function Home() {
                   <h3 className="font-bold text-white">Manual Estoico Revelado</h3>
                   <div className="flex items-center">
                     <span className="text-sm text-blue-300 line-through mr-2">R$197</span>
-                    <span className="text-[#ffd700] font-bold">R$47</span>
+                    <span className="text-[#ffd700] font-bold">R$67</span>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -1187,7 +1187,7 @@ export default function Home() {
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] rounded-full px-6"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                GARANTIR ACESSO POR R$47
+                GARANTIR ACESSO POR R$67
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
