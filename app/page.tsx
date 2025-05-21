@@ -572,7 +572,7 @@ export default function Home() {
               <Button
                 size="lg"
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 px-10 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4 w-full md:w-auto"
-                onClick={simulatePurchase}
+                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
                 QUERO TRANSFORMAR MINHA VIDA AGORA
                 <ArrowRight className="ml-2 h-6 w-6" />
@@ -674,7 +674,7 @@ export default function Home() {
             <Button
               size="lg"
               className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
-              onClick={simulatePurchase}
+              onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
             >
               QUERO DOMINAR ESTAS HABILIDADES
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -915,7 +915,7 @@ export default function Home() {
               <Button
                 size="lg"
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
-                onClick={simulatePurchase}
+                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
                 QUERO GARANTIR MINHA VAGA AGORA
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -1194,7 +1194,7 @@ export default function Home() {
               <Button
                 size="sm"
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] rounded-full px-6"
-                onClick={simulatePurchase}
+                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
                 GARANTIR ACESSO POR R$47
                 <ArrowRight className="ml-2 h-4 w-4" />
