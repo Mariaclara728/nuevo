@@ -453,7 +453,7 @@ export default function Home() {
                     <div className="flex justify-center mb-4">
                       <div className="w-32 h-32 rounded-full bg-blue-700 flex items-center justify-center border-4 border-[#ffd700]/70 shadow-lg">
                         <Image
-                          src="/placeholder.svg?height=120&width=120"
+                          src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/imagem_gerada-2025-05-21T121047.991.png"
                           alt="Logo Manual Estoico"
                           width={80}
                           height={80}
