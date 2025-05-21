@@ -373,7 +373,7 @@ export default function Home() {
         {/* Indicador de vagas limitadas */}
         <LimitedSpotsIndicator spotsLeft={spotsLeft} />
         <span>
-          
+          .
         </span>
 
         <div className="container relative z-10 mx-auto px-4">
