@@ -515,15 +515,15 @@ export default function Home() {
 
           {/* Social proof */}
           <div className="mt-12 pt-8 border-t border-blue-800/50">
-    <div className="text-center mb-6">
-        <p className="text-blue-200 text-sm uppercase tracking-wider">Recomendado por</p>
-        <img 
+            <div className="text-center mb-6">
+              <p className="text-blue-200 text-sm uppercase tracking-wider">Recomendado por</p>
+            <img 
             src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/the-stoic.png" 
             style="display: block; margin: 0 auto; max-width: 80%; height: auto;"
             alt="Imagem"
-        >
-    </div>
-</div>
+        ></img>
+            </div>
+          </div>
         </div>
       </section>
 
