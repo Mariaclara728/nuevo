@@ -398,6 +398,12 @@ export default function Home() {
               </div>
             </div>
 
+              <div className="inline-block mb-6">
+                <Badge className="bg-blue-500/20 text-blue-300 hover:bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-1 text-sm">
+                  ACESSO IMEDIATO
+                </Badge>
+              </div>
+
               <p className="text-xl md:text-2xl font-medium text-blue-100 mb-8 max-w-xl mx-auto lg:mx-0">
                 O Sistema Definitivo Que Já Transformou a Vida de{" "}
                 <span className="text-[#ffd700] font-bold">3.111 Pessoas</span> Através do Poder do Estoicismo
@@ -531,11 +537,6 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
 
-              <div className="inline-block mb-6">
-                <Badge className="bg-blue-500/20 text-blue-300 hover:bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-1 text-sm">
-                  ACESSO IMEDIATO
-                </Badge>
-              </div>
 
           {/* Contador regressivo */}
           <div className="max-w-4xl mx-auto mb-8 bg-blue-900/30 border border-blue-800/50 rounded-lg p-3 text-center">
