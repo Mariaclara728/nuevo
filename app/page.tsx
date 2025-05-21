@@ -574,7 +574,7 @@ export default function Home() {
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 px-10 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4 w-full md:w-auto"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                QUERO TRANSFORMAR MINHA VIDA AGORA
+                TRANSFORMAR MINHA VIDA AGORA
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
 
@@ -676,7 +676,7 @@ export default function Home() {
               className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
               onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
             >
-              QUERO DOMINAR ESTAS HABILIDADES
+              QUERO ESTAS HABILIDADES
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -917,7 +917,7 @@ export default function Home() {
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                QUERO GARANTIR MINHA VAGA AGORA
+                GARANTIR MINHA VAGA AGORA
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <div className="mt-4 text-blue-300 text-sm">
@@ -1155,7 +1155,7 @@ export default function Home() {
                 className="w-full bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                QUERO TRANSFORMAR MINHA MENTE POR APENAS R$47
+                TRANSFORMAR MINHA MENTE R$47
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
               <div className="flex items-center justify-center gap-2 text-blue-300 text-sm">
