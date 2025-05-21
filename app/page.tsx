@@ -530,7 +530,7 @@ export default function Home() {
       </section>
 
       {/* Segunda Dobra - Vídeo e Primeira CTA */}
-      <section className="<script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/yc52c2gp8a.js" async type="module"></script><style>wistia-player[media-id='yc52c2gp8a']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/yc52c2gp8a/swatch'); display: block; filter: blur(5px); padding-top:55.94%; }</style> <wistia-player media-id="yc52c2gp8a" aspect="1.7877094972067038"></wistia-player>" ref={videoRef}>
+      <section className="<script src="async></script><script src="https://fast.wistia.com/embed/yc52c2gp8a.js" async type="module"></script><style>wistia-player[media-id='yc52c2gp8a']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/yc52c2gp8a/swatch'); display: block; filter: blur(5px); padding-top:55.94%; }</style> <wistia-player media-id="yc52c2gp8a" aspect="1.7877094972067038"></wistia-player>" ref={videoRef}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {/* Vídeo de apresentação */}
