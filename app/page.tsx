@@ -517,11 +517,13 @@ export default function Home() {
           <div className="mt-12 pt-8 border-t border-blue-800/50">
             <div className="text-center mb-6">
               <p className="text-blue-200 text-sm uppercase tracking-wider">Recomendado por</p>
-            <img 
-            src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/the-stoic.png" 
-            style="display: block; margin: 0 auto; max-width: 80%; height: auto;"
-            alt="Imagem"
-        ></img>
+            </div>
+            <div className="flex flex-wrap justify-center gap-8 opacity-70">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="h-12 w-24 bg-blue-200/10 rounded flex items-center justify-center">
+                  <div className="text-blue-100 text-xs">LOGO #{i + 1}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
