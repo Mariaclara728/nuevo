@@ -374,11 +374,6 @@ export default function Home() {
         <LimitedSpotsIndicator spotsLeft={spotsLeft} />
 
         <div className="container relative z-10 mx-auto px-4">
-          {/* Contador regressivo */}
-          <div className="max-w-4xl mx-auto mb-8 bg-blue-900/30 border border-blue-800/50 rounded-lg p-3 text-center">
-            <p className="text-blue-200 text-sm mb-1">ESTA OFERTA ESPECIAL EXPIRA EM:</p>
-            <CountdownTimer />
-          </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             <div className="w-full lg:w-1/2 text-center lg:text-left">
