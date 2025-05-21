@@ -952,19 +952,19 @@ export default function Home() {
               {
                 name: "Carlos Mendes, 42",
                 role: "Vendedor",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "https://optimalhealthscout.shop/wp-content/uploads/2025/05/f256f28a41fc4b4e1427cc37874429da.jpg",
                 text: "Eu tinha crises de ansiedade antes de cada reunião de vendas. Após 14 dias aplicando os exercícios do Manual Estoico, consegui fazer uma apresentação para 30 clientes sem nenhum nervosismo. Minha produtividade aumentou 27%.",
               },
               {
-                name: "Mariana Silva, 35",
-                role: "Mãe de 3 filhos",
-                image: "/placeholder.svg?height=100&width=100",
-                text: "Como mãe solo de 3 crianças, eu vivia no limite do estresse. O Manual Estoico me ensinou a separar o que posso controlar do que não posso. Agora consigo manter a calma mesmo nos dias mais caóticos. Meus filhos notaram a diferença.",
+                name: "Mario Silva, 35",
+                role: "Pai de 3 filhos",
+                image: "https://optimalhealthscout.shop/wp-content/uploads/2025/05/06.png",
+                text: "Como Pai de 3 crianças, eu vivia no limite do estresse. O Manual Estoico me ensinou a separar o que posso controlar do que não posso. Agora consigo manter a calma mesmo nos dias mais caóticos. Meus filhos notaram a diferença.",
               },
               {
                 name: "Roberto Lima, 51",
                 role: "Recém-divorciado",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "https://optimalhealthscout.shop/wp-content/uploads/2025/05/05.png",
                 text: "Meu divórcio me deixou devastado. Pensamentos negativos consumiam meus dias. O Manual Estoico me deu ferramentas práticas para aceitar o que não posso mudar. Em 21 dias, voltei a dormir normalmente e retomei minha vida social.",
               },
             ].map((testimonial, i) => (
