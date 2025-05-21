@@ -514,7 +514,12 @@ export default function Home() {
           </div>
 
           {/* Social proof */}
-          
+          <div className="mt-12 pt-8 border-t border-blue-800/50">
+            <div className="text-center mb-6">
+              <p className="text-blue-200 text-sm uppercase tracking-wider">Recomendado por</p>
+            src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/imagem_gerada-2025-05-21T121047.991.png"
+            </div>
+          </div>
         </div>
       </section>
 
