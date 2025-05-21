@@ -405,14 +405,18 @@ export default function Home() {
 
               <p className="text-xl md:text-2xl font-medium text-blue-100 mb-8 max-w-xl mx-auto lg:mx-0">
                 O Sistema Definitivo Que Já Transformou a Vida de{" "}
-                <span className="text-[#ffd700] font-bold">7.342 Pessoas</span> Através do Poder do Estoicismo
+                <span className="text-[#ffd700] font-bold">3.111 Pessoas</span> Através do Poder do Estoicismo
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <Button
                   size="lg"
                   className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
-                  onClick={simulatePurchase}
+                  onClick={() => {
+                    if (videoRef.current) {
+                      videoRef.current.scrollIntoView({ behavior: "smooth" })
+                    }
+                  }}
                 >
                   QUERO COMEÇAR AGORA
                   <ArrowRight className="ml-2 h-5 w-5" />
