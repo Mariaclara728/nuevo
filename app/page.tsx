@@ -545,11 +545,6 @@ export default function Home() {
                   allowFullScreen
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#001233] to-transparent p-4">
-                  <p className="text-white font-medium text-center">
-                    Assista ao vídeo para descobrir como o Manual Estoico pode transformar sua vida
-                  </p>
-                </div>
               </div>
             </div>
 
