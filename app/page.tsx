@@ -574,7 +574,7 @@ export default function Home() {
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 px-10 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4 w-full md:w-auto"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                TRANSFORMAR MINHA VIDA AGORA
+                MUDAR MINHA VIDA AGORA
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
 
