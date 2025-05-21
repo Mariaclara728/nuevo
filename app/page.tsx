@@ -917,7 +917,7 @@ export default function Home() {
                 className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                QUERO GARANTIR AGORA
+                QUERO GARANTIR AGORA.
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <div className="mt-4 text-blue-300 text-sm">
