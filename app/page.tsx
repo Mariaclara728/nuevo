@@ -352,7 +352,7 @@ export default function Home() {
         {/* Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#001233] via-[#001845] to-[#023e8a] opacity-80"></div>
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://optimalhealthscout.shop/wp-content/uploads/2025/05/imagem_gerada-2025-05-21T125256.553.png')] bg-cover bg-center opacity-10"></div>
           <div className="absolute top-0 left-0 w-full h-full">
             {Array.from({ length: 20 }).map((_, i) => (
               <div
