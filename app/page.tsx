@@ -529,52 +529,6 @@ export default function Home() {
                 <div className="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-[#ffd700]/30"></div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-[#ffd700]/30"></div>
 
-                {/* Book mockup */}
-                <div className="relative bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg shadow-2xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                  <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=400')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
-
-                  <div className="pt-8 pb-4 px-6">
-                    <div className="flex justify-center mb-4">
-                      <div className="w-32 h-32 rounded-full bg-blue-700 flex items-center justify-center border-4 border-[#ffd700]/70 shadow-lg">
-                        <Image
-                          src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/imagem_gerada-2025-05-21T121047.991.png"
-                          alt="Logo Manual Estoico"
-                          width={80}
-                          height={80}
-                          className="rounded-full"
-                        />
-                      </div>
-                    </div>
-
-                    <h3 className="text-2xl font-bold text-center text-white mb-2">Manual Estoico</h3>
-                    <p className="text-blue-200 text-center text-sm mb-4">EDIÇÃO PREMIUM</p>
-
-                    <div className="bg-blue-800/50 rounded-lg p-4 mb-4">
-                      <ul className="space-y-2">
-                        {[
-                          "7 Módulos Completos",
-                          "Exercícios Práticos",
-                          "Meditações Guiadas",
-                          "Acesso Vitalício",
-                          "Suporte Exclusivo",
-                          "Comunidade Privada",
-                          "Atualizações Gratuitas",
-                        ].map((item, i) => (
-                          <li key={i} className="flex items-center text-sm text-blue-100">
-                            <CheckCircle className="h-4 w-4 text-[#ffd700] mr-2 flex-shrink-0" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="flex justify-center">
-                      <Badge className="bg-[#ffd700]/20 text-[#ffd700] border border-[#ffd700]/30 px-3 py-1">
-                        + 5 Bônus Exclusivos
-                      </Badge>
-                    </div>
-                  </div>
-                </div>
 
               </div>
             </div>
