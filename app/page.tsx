@@ -401,19 +401,17 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <Button
                   size="lg"
-                  className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 max-w-full"
+                  className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
                   onClick={simulatePurchase}
                 >
-                  <span className="flex items-center whitespace-nowrap">
-                    QUERO COMEÇAR AGORA
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </span>
+                  QUERO COMEÇAR AGORA
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
 
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-blue-400/30 text-blue-100 hover:bg-blue-800/20 text-lg h-14 px-8 rounded-full flex items-center gap-2 max-w-full"
+                  className="border-blue-400/30 text-blue-100 hover:bg-blue-800/20 text-lg h-14 px-8 rounded-full flex items-center gap-2"
                   onClick={() => {
                     if (videoRef.current) {
                       videoRef.current.scrollIntoView({ behavior: "smooth" })
@@ -499,423 +497,373 @@ export default function Home() {
                   <div className="text-xs line-through">R$197</div>
                   <div className="text-xl">R$47</div>
                 </div>
+
+                {/* Play button overlay */}
+                <button
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#ffd700]/90 hover:bg-[#ffd700] text-[#001233] rounded-full w-16 h-16 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                  onClick={() => {
+                    if (videoRef.current) {
+                      videoRef.current.scrollIntoView({ behavior: "smooth" })
+                    }
+                  }}
+                >
+                  <Play className="h-8 w-8 ml-1" fill="#001233" />
+                </button>
               </div>
+            </div>
+          </div>
+
+          {/* Social proof */}
+          <div className="mt-12 pt-8 border-t border-blue-800/50">
+            <div className="text-center mb-6">
+              <p className="text-blue-200 text-sm uppercase tracking-wider">Recomendado por</p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-8 opacity-70">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="h-12 w-24 bg-blue-200/10 rounded flex items-center justify-center">
+                  <div className="text-blue-100 text-xs">LOGO #{i + 1}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Segunda Dobra - Vídeo e Benefícios */}
-      <section className="py-16 bg-gradient-to-b from-[#001233] to-[#001845]" ref={videoRef}>
+      {/* Segunda Dobra - Vídeo e Primeira CTA */}
+      <section className="py-16 bg-[#001845]" ref={videoRef}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            {/* Vídeo */}
-            <div className="relative bg-blue-900/30 border border-blue-800 rounded-xl overflow-hidden mb-12">
-              <div className="aspect-w-16 aspect-h-9">
-                <div className="w-full h-full bg-blue-900/50 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="bg-[#ffd700]/20 rounded-full p-6 inline-flex mb-4">
-                      <Play className="h-16 w-16 text-[#ffd700]" fill="#ffd700" />
-                    </div>
-                    <p className="text-blue-200">Clique para assistir o vídeo</p>
-                  </div>
+            {/* Vídeo de apresentação */}
+            <div className="relative mb-12 group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#ffd700] to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+              <div className="relative bg-blue-900/50 border-2 border-blue-800 rounded-lg overflow-hidden aspect-video">
+                <Image
+                  src="/placeholder.svg?height=720&width=1280&text=Vídeo+de+Apresentação"
+                  alt="Thumbnail do vídeo"
+                  width={1280}
+                  height={720}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <button className="bg-[#ffd700]/90 hover:bg-[#ffd700] text-[#001233] rounded-full w-20 h-20 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 group-hover:scale-110">
+                    <Play className="h-10 w-10 ml-1" fill="#001233" />
+                  </button>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#001233] to-transparent p-4">
+                  <p className="text-white font-medium text-center">
+                    Assista ao vídeo para descobrir como o Manual Estoico pode transformar sua vida
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Benefícios */}
-            <div className="text-center mb-12">
-              <Badge className="mb-4 bg-blue-900/50 text-blue-300 hover:bg-blue-900/50 border border-blue-800">
-                BENEFÍCIOS COMPROVADOS
-              </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                O Que Você Vai <span className="text-[#ffd700]">Conquistar</span>
-              </h2>
-              <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                O Manual Estoico foi desenvolvido para transformar sua mente e sua vida em apenas 21 dias, através de
-                princípios testados por mais de 2.000 anos
-              </p>
-            </div>
+            {/* Primeira CTA */}
+            <div className="bg-blue-900/30 border border-blue-800 rounded-lg p-6 md:p-8 text-center">
+              <div className="mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Transforme Sua Mente Por Apenas{" "}
+                  <span className="text-[#ffd700]">
+                    R$47<span className="text-sm align-top ml-1">à vista</span>
+                  </span>
+                </h2>
+                <p className="text-xl text-blue-200">ou em até 12x de R$4,70 no cartão</p>
+              </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {[
-                {
-                  title: "Controle Emocional Absoluto",
-                  description:
-                    "Aprenda a técnica dos 3 círculos estoicos para nunca mais perder o controle emocional em situações difíceis.",
-                  icon: <Brain className="h-6 w-6 text-[#ffd700]" />,
-                },
-                {
-                  title: "Fim da Ansiedade Crônica",
-                  description:
-                    "Domine o método da 'Visualização Negativa' que elimina a ansiedade ao preparar sua mente para qualquer cenário.",
-                  icon: <Zap className="h-6 w-6 text-[#ffd700]" />,
-                },
-                {
-                  title: "Relacionamentos Mais Saudáveis",
-                  description:
-                    "Descubra como aplicar a 'Dicotomia do Controle' para transformar todos os seus relacionamentos pessoais e profissionais.",
-                  icon: <Heart className="h-6 w-6 text-[#ffd700]" />,
-                },
-                {
-                  title: "Clareza de Propósito",
-                  description:
-                    "Utilize o exercício da 'Bússola Interna' para identificar seu propósito de vida e tomar decisões alinhadas com seus valores.",
-                  icon: <Target className="h-6 w-6 text-[#ffd700]" />,
-                },
-                {
-                  title: "Produtividade Elevada",
-                  description:
-                    "Implemente o sistema de 'Blocos Estoicos' para eliminar a procrastinação e multiplicar sua produtividade diária.",
-                  icon: <Lightbulb className="h-6 w-6 text-[#ffd700]" />,
-                },
-                {
-                  title: "Resiliência Mental",
-                  description:
-                    "Desenvolva a mentalidade do 'Amor ao Destino' que transforma obstáculos em oportunidades de crescimento.",
-                  icon: <Flame className="h-6 w-6 text-[#ffd700]" />,
-                },
-              ].map((benefit, i) => (
-                <div
-                  key={i}
-                  className="bg-blue-900/20 border border-blue-800 rounded-lg p-6 hover:bg-blue-900/30 transition-all duration-300 hover:border-blue-700"
-                >
-                  <div className="flex items-start">
-                    <div className="bg-blue-900/50 rounded-full p-3 mr-4">{benefit.icon}</div>
-                    <div>
-                      <h3 className="font-bold text-white mb-2">{benefit.title}</h3>
-                      <p className="text-blue-200 text-sm">{benefit.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Estatísticas */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              {[
-                { value: "94%", label: "relatam redução significativa de ansiedade" },
-                { value: "89%", label: "melhoraram seus relacionamentos pessoais" },
-                { value: "78%", label: "aumentaram sua produtividade no trabalho" },
-                { value: "97%", label: "recomendariam para um amigo" },
-              ].map((stat, i) => (
-                <div
-                  key={i}
-                  className="bg-blue-900/30 border border-blue-800 rounded-lg p-4 text-center hover:bg-blue-900/40 transition-all duration-300"
-                >
-                  <div className="text-3xl font-bold text-[#ffd700] mb-2">{stat.value}</div>
-                  <p className="text-blue-200 text-sm">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* CTA */}
-            <div className="text-center">
               <Button
                 size="lg"
-                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 max-w-full mx-auto"
+                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 px-10 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4 w-full md:w-auto"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                <span className="flex items-center whitespace-nowrap">
-                  QUERO TRANSFORMAR MINHA MENTE AGORA
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </span>
+                QUERO TRANSFORMAR MINHA VIDA AGORA
+                <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
+
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
+                <div className="flex items-center">
+                  <Shield className="h-5 w-5 text-[#ffd700] mr-2" />
+                  <span className="text-blue-200 text-sm">Garantia de 7 dias</span>
+                </div>
+                <div className="flex items-center">
+                  <Lock className="h-5 w-5 text-[#ffd700] mr-2" />
+                  <span className="text-blue-200 text-sm">Pagamento 100% seguro</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2" />
+                  <span className="text-blue-200 text-sm">Acesso imediato</span>
+                </div>
+              </div>
+
+              <div className="flex justify-center gap-2 mt-4">
+                {["Visa", "Master", "Pix", "Boleto"].map((method, i) => (
+                  <div key={i} className="bg-blue-900/50 text-blue-200 text-xs px-2 py-1 rounded">
+                    {method}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Terceira Dobra - Conteúdo do Curso */}
-      <section className="py-16 bg-[#001845]">
+      {/* Terceira Dobra - O Que Você Vai Aprender */}
+      <section className="py-16 bg-gradient-to-b from-[#001845] to-[#001233]">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
+          <div className="max-w-3xl mx-auto text-center mb-12">
             <Badge className="mb-4 bg-blue-900/50 text-blue-300 hover:bg-blue-900/50 border border-blue-800">
-              CONTEÚDO COMPLETO
+              TRANSFORMAÇÃO COMPLETA
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              O Que Está Incluído No <span className="text-[#ffd700]">Manual Estoico</span>
+              O Que Você Vai <span className="text-[#ffd700]">Aprender</span>
             </h2>
-            <p className="text-xl text-blue-200">
-              7 módulos estrategicamente organizados para transformar sua mente em apenas 21 dias
-            </p>
+            <p className="text-xl text-blue-200">Domine estas 6 áreas essenciais e transforme completamente sua vida</p>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-4 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                number: 1,
-                title: "Fundamentos do Estoicismo",
+                title: "Controle Emocional",
                 description:
-                  "Entenda os princípios básicos que transformaram a vida de imperadores, atletas e CEOs ao longo de 2.000 anos.",
-                lessons: [
-                  "A história e os principais pensadores estoicos",
-                  "Os 3 pilares fundamentais do Estoicismo",
-                  "Como aplicar a filosofia estoica no mundo moderno",
-                  "Exercício prático: Diário Estoico (modelo incluído)",
-                ],
-                icon: <BookOpen className="text-[#ffd700]" />,
+                  "Aprenda a responder em vez de reagir às situações, mantendo a calma mesmo nos momentos mais difíceis.",
+                icon: <Brain className="h-8 w-8 text-[#ffd700]" />,
               },
               {
-                number: 2,
-                title: "Dicotomia do Controle",
+                title: "Foco no Essencial",
                 description:
-                  "Domine o princípio mais poderoso do Estoicismo para eliminar preocupações desnecessárias e focar sua energia no que realmente importa.",
-                lessons: [
-                  "Como identificar o que está e o que não está sob seu controle",
-                  "A técnica dos 3 círculos para tomada de decisões",
-                  "Eliminando a ansiedade através da aceitação ativa",
-                  "Exercício prático: Mapeamento de Controle Diário",
-                ],
-                icon: <Target className="text-[#ffd700]" />,
+                  "Identifique o que realmente está sob seu controle e pare de desperdiçar energia com o que não pode mudar.",
+                icon: <Target className="h-8 w-8 text-[#ffd700]" />,
               },
               {
-                number: 3,
-                title: "Visualização Negativa",
+                title: "Resiliência Mental",
                 description:
-                  "Aprenda a técnica milenar que elimina o medo do futuro e desenvolve gratidão genuína pelo presente.",
-                lessons: [
-                  "O método Premeditatio Malorum para preparar sua mente para desafios",
-                  "Como transformar pessimismo em resiliência mental",
-                  "Desenvolvendo gratidão através da escassez imaginada",
-                  "Exercício prático: Visualização Negativa Guiada (áudio incluído)",
-                ],
-                icon: <Brain className="text-[#ffd700]" />,
+                  "Desenvolva uma mente inabalável que permanece forte e clara mesmo diante das maiores adversidades.",
+                icon: <Zap className="h-8 w-8 text-[#ffd700]" />,
               },
               {
-                number: 4,
-                title: "Amor ao Destino (Amor Fati)",
+                title: "Relacionamentos Saudáveis",
                 description:
-                  "Descubra como aceitar e até mesmo amar os obstáculos, transformando-os em oportunidades de crescimento.",
-                lessons: [
-                  "A mentalidade que transformou a vida de Nietzsche e Mandela",
-                  "Como encontrar oportunidades escondidas em cada problema",
-                  "Técnicas para desenvolver resiliência inabalável",
-                  "Exercício prático: Reinterpretação de Obstáculos",
-                ],
-                icon: <Heart className="text-[#ffd700]" />,
+                  "Transforme suas interações com os outros através da compreensão, paciência e comunicação efetiva.",
+                icon: <Heart className="h-8 w-8 text-[#ffd700]" />,
               },
               {
-                number: 5,
-                title: "Atenção Plena Estoica",
+                title: "Clareza de Propósito",
                 description:
-                  "Combine mindfulness moderno com práticas estoicas para desenvolver presença mental e clareza de pensamento.",
-                lessons: [
-                  "A diferença entre mindfulness budista e atenção estoica",
-                  "Técnicas de observação desapegada dos pensamentos",
-                  "Como usar a atenção plena para controlar emoções negativas",
-                  "Exercício prático: Meditação Estoica Diária (áudio incluído)",
-                ],
-                icon: <Zap className="text-[#ffd700]" />,
+                  "Descubra seu propósito de vida e alinhe suas ações diárias com seus valores mais profundos.",
+                icon: <Lightbulb className="h-8 w-8 text-[#ffd700]" />,
               },
               {
-                number: 6,
-                title: "Virtude e Propósito",
+                title: "Produtividade Superior",
                 description:
-                  "Estabeleça um código de valores pessoal que guiará suas decisões e dará significado à sua vida.",
-                lessons: [
-                  "As 4 virtudes cardeais do Estoicismo e como aplicá-las hoje",
-                  "Desenvolvendo seu código de conduta pessoal",
-                  "Como encontrar propósito através do serviço aos outros",
-                  "Exercício prático: Bússola de Valores Pessoais",
-                ],
-                icon: <Target className="text-[#ffd700]" />,
+                  "Elimine a procrastinação e desenvolva uma disciplina inabalável para realizar o que realmente importa.",
+                icon: <Flame className="h-8 w-8 text-[#ffd700]" />,
               },
-              {
-                number: 7,
-                title: "Integração e Prática Diária",
-                description:
-                  "Consolide todo o aprendizado em uma rotina diária sustentável que transformará sua mente permanentemente.",
-                lessons: [
-                  "Criando sua rotina matinal estoica em 20 minutos",
-                  "Revisão vespertina para crescimento contínuo",
-                  "Como manter a prática mesmo em períodos desafiadores",
-                  "Exercício prático: Seu Plano de 90 Dias para Domínio Mental",
-                ],
-                icon: <CheckCircle className="text-[#ffd700]" />,
-              },
-            ].map((module, i) => (
-              <ExpandableModule
+            ].map((item, i) => (
+              <div
                 key={i}
-                number={module.number}
-                title={module.title}
-                description={module.description}
-                lessons={module.lessons}
-                icon={module.icon}
-              />
+                className="bg-blue-900/20 border border-blue-800 rounded-lg p-6 hover:bg-blue-900/30 transition-all duration-300 hover:scale-105 hover:border-blue-700"
+              >
+                <div className="bg-blue-900/50 rounded-full p-3 w-16 h-16 flex items-center justify-center mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-blue-200">{item.description}</p>
+              </div>
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="text-center">
+          <div className="mt-12 text-center">
             <Button
               size="lg"
-              className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 max-w-full mx-auto"
+              className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
               onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
             >
-              <span className="flex items-center whitespace-nowrap">
-                QUERO TER ACESSO A TODO CONTEÚDO
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </span>
+              QUERO DOMINAR ESTAS HABILIDADES
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Quarta Dobra - Bônus e Preço */}
-      <section className="py-16 bg-gradient-to-b from-[#001845] to-[#001233]">
+      {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
+      <section className="py-16 bg-[#001233]">
         <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <Badge className="mb-4 bg-[#ffd700]/20 text-[#ffd700] hover:bg-[#ffd700]/20 border border-[#ffd700]/30">
+              CONTEÚDO EXCLUSIVO
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Tudo Que Você Vai <span className="text-[#ffd700]">Receber</span>
+            </h2>
+            <p className="text-xl text-blue-200">
+              Um sistema completo para transformar sua mente através do Estoicismo
+            </p>
+          </div>
+
           <div className="max-w-4xl mx-auto">
-            <Tabs defaultValue="bonus" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-8">
-                <TabsTrigger
-                  value="bonus"
-                  className="text-lg py-3 data-[state=active]:bg-blue-900/30 data-[state=active]:text-[#ffd700] data-[state=active]:shadow-none"
-                >
+            <Tabs defaultValue="modules" className="mb-12">
+              <TabsList className="grid grid-cols-2 w-full mb-8">
+                <TabsTrigger value="modules" className="text-lg py-3">
+                  <BookOpen className="h-5 w-5 mr-2" />
+                  Módulos do Curso
+                </TabsTrigger>
+                <TabsTrigger value="bonuses" className="text-lg py-3">
                   <Gift className="h-5 w-5 mr-2" />
                   Bônus Exclusivos
                 </TabsTrigger>
-                <TabsTrigger
-                  value="pricing"
-                  className="text-lg py-3 data-[state=active]:bg-blue-900/30 data-[state=active]:text-[#ffd700] data-[state=active]:shadow-none"
-                >
-                  <CheckCircle className="h-5 w-5 mr-2" />
-                  O Que Você Recebe
-                </TabsTrigger>
               </TabsList>
 
-              <TabsContent value="pricing" className="space-y-6">
-                <div className="bg-blue-900/30 border border-blue-800 rounded-lg p-6">
-                  <div className="flex flex-col md:flex-row gap-8">
-                    <div className="md:w-1/2">
-                      <h3 className="text-2xl font-bold text-white mb-4">Investimento Único</h3>
-                      <div className="mb-4">
-                        <span className="text-blue-300 text-lg line-through">De R$197</span>
-                        <div className="text-4xl font-bold text-[#ffd700]">Por R$47</div>
-                        <span className="text-blue-300">Pagamento único</span>
-                      </div>
-
-                      <div className="space-y-3 mb-6">
-                        <div className="flex items-center">
-                          <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2 flex-shrink-0" />
-                          <span className="text-blue-100">Acesso vitalício a todo o conteúdo</span>
-                        </div>
-                        <div className="flex items-center">
-                          <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2 flex-shrink-0" />
-                          <span className="text-blue-100">Atualizações gratuitas</span>
-                        </div>
-                        <div className="flex items-center">
-                          <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2 flex-shrink-0" />
-                          <span className="text-blue-100">Suporte por 30 dias</span>
-                        </div>
-                        <div className="flex items-center">
-                          <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2 flex-shrink-0" />
-                          <span className="text-blue-100">Garantia de 7 dias</span>
-                        </div>
-                        <div className="flex items-center">
-                          <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2 flex-shrink-0" />
-                          <span className="text-blue-100">Todos os 5 bônus inclusos</span>
-                        </div>
-                      </div>
-
-                      <Button
-                        size="lg"
-                        className="w-full bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 max-w-full"
-                        onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
-                      >
-                        <span className="flex items-center whitespace-nowrap">
-                          QUERO GARANTIR MINHA VAGA
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </span>
-                      </Button>
-                    </div>
-
-                    <div className="md:w-1/2">
-                      <h3 className="text-xl font-bold text-white mb-4">O Que Está Incluído:</h3>
-                      <ul className="space-y-4">
-                        <li className="flex items-start">
-                          <div className="bg-blue-900/50 text-[#ffd700] rounded-full h-6 w-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                            1
-                          </div>
-                          <div>
-                            <h4 className="font-bold text-white">Manual Estoico Completo</h4>
-                            <p className="text-sm text-blue-200">7 módulos com exercícios práticos</p>
-                          </div>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="bg-blue-900/50 text-[#ffd700] rounded-full h-6 w-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                            2
-                          </div>
-                          <div>
-                            <h4 className="font-bold text-white">21 Exercícios Diários</h4>
-                            <p className="text-sm text-blue-200">Práticas para transformar sua mente</p>
-                          </div>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="bg-blue-900/50 text-[#ffd700] rounded-full h-6 w-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                            3
-                          </div>
-                          <div>
-                            <h4 className="font-bold text-white">7 Meditações Guiadas</h4>
-                            <p className="text-sm text-blue-200">Áudios para prática diária</p>
-                          </div>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="bg-blue-900/50 text-[#ffd700] rounded-full h-6 w-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                            4
-                          </div>
-                          <div>
-                            <h4 className="font-bold text-white">Modelos de Diários</h4>
-                            <p className="text-sm text-blue-200">Templates para acompanhar seu progresso</p>
-                          </div>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="bg-blue-900/50 text-[#ffd700] rounded-full h-6 w-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                            5
-                          </div>
-                          <div>
-                            <h4 className="font-bold text-white">Comunidade Privada</h4>
-                            <p className="text-sm text-blue-200">Acesso ao grupo exclusivo de praticantes</p>
-                          </div>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="bg-blue-900/50 text-[#ffd700] rounded-full h-6 w-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                            +
-                          </div>
-                          <div>
-                            <h4 className="font-bold text-white">5 Bônus Exclusivos</h4>
-                            <p className="text-sm text-blue-200">Valor adicional de R$98 incluído</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <TabsContent value="modules" className="space-y-4 animate-fade-in">
+                {[
+                  {
+                    number: 1,
+                    title: "Fundamentos do Estoicismo",
+                    description:
+                      "Compreenda os princípios básicos da filosofia estoica e como eles se aplicam à vida moderna.",
+                    icon: "🧠",
+                    lessons: [
+                      "A história do Estoicismo e seus principais filósofos",
+                      "Os três pilares do Estoicismo: Lógica, Física e Ética",
+                      "A dicotomia do controle: o que está e o que não está sob seu controle",
+                      "Como aplicar o Estoicismo no século 21",
+                    ],
+                  },
+                  {
+                    number: 2,
+                    title: "Dominando Suas Emoções",
+                    description:
+                      "Aprenda técnicas práticas para gerenciar suas emoções e responder em vez de reagir às situações.",
+                    icon: "💪",
+                    lessons: [
+                      "Como as emoções são formadas segundo a visão estoica",
+                      "Técnicas para identificar e interromper reações emocionais negativas",
+                      "O método de 4 passos para transformar emoções destrutivas",
+                      "Exercícios diários para fortalecer seu controle emocional",
+                    ],
+                  },
+                  {
+                    number: 3,
+                    title: "A Dicotomia do Controle",
+                    description:
+                      "Domine a habilidade de focar apenas no que está sob seu controle e libertar-se da ansiedade.",
+                    icon: "⚖️",
+                    lessons: [
+                      "Como identificar o que realmente está sob seu controle",
+                      "Técnica da visualização negativa (premeditatio malorum)",
+                      "Como desenvolver a indiferença estoica (apatheia)",
+                      "Exercícios práticos para aplicar a dicotomia do controle no dia a dia",
+                    ],
+                  },
+                  {
+                    number: 4,
+                    title: "Virtudes Estoicas na Prática",
+                    description: "Incorpore as quatro virtudes cardeais do Estoicismo em sua vida diária.",
+                    icon: "✨",
+                    lessons: [
+                      "Sabedoria (Sophia): como tomar decisões mais sábias",
+                      "Coragem (Andreia): como enfrentar seus medos",
+                      "Justiça (Dikaiosyne): como agir com integridade em todas as situações",
+                      "Temperança (Sophrosyne): como desenvolver autocontrole e moderação",
+                    ],
+                  },
+                  {
+                    number: 5,
+                    title: "Relacionamentos Estoicos",
+                    description: "Transforme suas interações com os outros através dos princípios estoicos.",
+                    icon: "👥",
+                    lessons: [
+                      "Como lidar com pessoas difíceis usando princípios estoicos",
+                      "Técnicas para comunicação efetiva baseada em valores",
+                      "Como desenvolver empatia genuína sem se deixar afetar emocionalmente",
+                      "Estratégias para resolver conflitos com sabedoria estoica",
+                    ],
+                  },
+                  {
+                    number: 6,
+                    title: "Produtividade e Foco",
+                    description:
+                      "Elimine a procrastinação e desenvolva uma disciplina inabalável para realizar o que importa.",
+                    icon: "🎯",
+                    lessons: [
+                      "Como definir prioridades baseadas em valores estoicos",
+                      "Técnicas para eliminar distrações e manter o foco",
+                      "O método estoico para vencer a procrastinação",
+                      "Como desenvolver hábitos positivos que duram",
+                    ],
+                  },
+                  {
+                    number: 7,
+                    title: "Resiliência Mental Avançada",
+                    description:
+                      "Desenvolva uma mente que permanece forte e clara mesmo nas situações mais desafiadoras.",
+                    icon: "🔄",
+                    lessons: [
+                      "Como transformar adversidades em oportunidades de crescimento",
+                      "Técnicas avançadas de meditação estoica",
+                      "Como desenvolver uma perspectiva cósmica (visão do alto)",
+                      "Integrando o Estoicismo como filosofia de vida permanente",
+                    ],
+                  },
+                ].map((module) => (
+                  <ExpandableModule
+                    key={module.number}
+                    number={module.number}
+                    title={module.title}
+                    description={module.description}
+                    lessons={module.lessons}
+                    icon={<span className="text-2xl">{module.icon}</span>}
+                  />
+                ))}
               </TabsContent>
 
-              <TabsContent value="bonus" className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <TabsContent value="bonuses" className="animate-fade-in">
+                <div className="bg-blue-900/20 border border-blue-800 rounded-lg p-6 mb-8">
+                  <div className="flex items-center mb-4">
+                    <Sparkles className="h-6 w-6 text-[#ffd700] mr-2" />
+                    <h3 className="text-xl font-bold text-white">Desbloqueie Todos os Bônus Exclusivos</h3>
+                  </div>
+                  <p className="text-blue-200 mb-4">
+                    Clique nos botões abaixo para revelar cada um dos 5 bônus exclusivos que você receberá ao adquirir o
+                    Manual Estoico hoje.
+                  </p>
+                  <div className="flex items-center">
+                    <div className="flex-1 h-2 bg-blue-900/50 rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-[#ffd700]"
+                        style={{
+                          width: `${
+                            (revealedBonuses.filter((revealed) => revealed).length / revealedBonuses.length) * 100
+                          }%`,
+                          transition: "width 0.5s ease-in-out",
+                        }}
+                      ></div>
+                    </div>
+                    <span className="ml-3 text-blue-200 font-medium">
+                      {revealedBonuses.filter((revealed) => revealed).length}/{revealedBonuses.length} desbloqueados
+                    </span>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: "Biblioteca de Citações Estoicas",
-                      description: "365 citações organizadas por tema para inspiração diária.",
+                      title: "Biblioteca Estoica Digital",
+                      description: "Acesso a 5 obras clássicas do Estoicismo em formato digital.",
                       value: "R$27",
                       icon: <BookOpen className="h-5 w-5" />,
                     },
                     {
-                      title: "Guia de Aplicação Profissional",
-                      description: "Como aplicar o Estoicismo para avançar na carreira.",
-                      value: "R$37",
-                      icon: <Target className="h-5 w-5" />,
+                      title: "Diário Estoico (PDF)",
+                      description: "Template para acompanhar sua prática diária e registrar seus progressos.",
+                      value: "R$17",
+                      icon: <BookOpen className="h-5 w-5" />,
                     },
                     {
-                      title: "Meditações Estoicas em Áudio",
-                      description: "7 meditações guiadas para praticar diariamente.",
-                      value: "R$47",
-                      icon: <Sparkles className="h-5 w-5" />,
+                      title: "Guia de Aplicação Rápida",
+                      description: "Resumo prático para consulta rápida em momentos de necessidade.",
+                      value: "R$17",
+                      icon: <Zap className="h-5 w-5" />,
                     },
                     {
-                      title: "Suporte Direto por 30 Dias",
+                      title: "Suporte por Email",
                       description: "Tire suas dúvidas diretamente com nossa equipe por 30 dias.",
                       value: "R$37",
                       icon: <MessageCircle className="h-5 w-5" />,
@@ -957,7 +905,7 @@ export default function Home() {
             </Tabs>
 
             {/* CTA Intermediária */}
-            <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center mt-12">
+            <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Tudo Isso Por Apenas <span className="text-[#ffd700]">R$47</span>
               </h3>
@@ -966,13 +914,11 @@ export default function Home() {
               </p>
               <Button
                 size="lg"
-                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 max-w-full mx-auto"
+                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                <span className="flex items-center whitespace-nowrap">
-                  QUERO GARANTIR MINHA VAGA AGORA
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </span>
+                QUERO GARANTIR MINHA VAGA AGORA
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <div className="mt-4 text-blue-300 text-sm">
                 <div className="flex items-center justify-center">
@@ -1206,15 +1152,13 @@ export default function Home() {
             <div className="max-w-md mx-auto">
               <Button
                 size="lg"
-                className="w-full bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4 max-w-full"
+                className="w-full bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                <span className="flex items-center whitespace-nowrap">
-                  QUERO TRANSFORMAR MINHA MENTE POR APENAS R$47
-                  <ArrowRight className="ml-2 h-6 w-6" />
-                </span>
+                QUERO TRANSFORMAR MINHA MENTE POR APENAS R$47
+                <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
-              <div className="flex items-center justify-center gap-2 text-blue-300 text-sm flex-wrap">
+              <div className="flex items-center justify-center gap-2 text-blue-300 text-sm">
                 <Lock className="h-4 w-4 text-[#ffd700]" />
                 <span>Pagamento 100% seguro</span>
                 <span>•</span>
@@ -1249,13 +1193,11 @@ export default function Home() {
               </div>
               <Button
                 size="sm"
-                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] rounded-full px-6 max-w-full"
+                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] rounded-full px-6"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                <span className="flex items-center whitespace-nowrap">
-                  GARANTIR ACESSO POR R$47
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </span>
+                GARANTIR ACESSO POR R$47
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
