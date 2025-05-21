@@ -557,7 +557,7 @@ export default function Home() {
                     R$67<span className="text-sm align-top ml-1">à vista</span>
                   </span>
                 </h2>
-                <p className="text-xl text-blue-200">ou em até 12x de R$4,70 no cartão</p>
+                <p className="text-xl text-blue-200">ou em até 12x de R$6,70 no cartão</p>
               </div>
 
               <Button
