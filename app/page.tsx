@@ -531,31 +531,32 @@ export default function Home() {
 
       {/* Segunda Dobra - Vídeo e Primeira CTA */}
 <section className="py-16 bg-[#001845]" ref={videoRef}>
-  <div className="container mx-auto px-4">
-    <div className="max-w-4xl mx-auto">
-      {/* Vídeo de apresentação */}
-      <div className="relative mb-12 group">
-        <div className="absolute -inset-1 bg-gradient-to-r from-[#ffd700] to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-        <div className="relative bg-blue-900/50 border-2 border-blue-800 rounded-lg overflow-hidden aspect-video">
-          <iframe
-            src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID?rel=0&showinfo=0&modestbranding=1"
-            title="Manual Estoico - Vídeo de apresentação"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full absolute inset-0"
-          ></iframe>
-          
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#001233] to-transparent p-4">
-            <p className="text-white font-medium text-center">
-              Assista ao vídeo para descobrir como o Manual Estoico pode transformar sua vida
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            {/* Vídeo de apresentação */}
+            <div className="relative mb-12 group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#ffd700] to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+              <div className="relative bg-blue-900/50 border-2 border-blue-800 rounded-lg overflow-hidden aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID?rel=0&showinfo=0&modestbranding=1"
+                  title="Manual Estoico - Vídeo de apresentação"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <button className="bg-[#ffd700]/90 hover:bg-[#ffd700] text-[#001233] rounded-full w-20 h-20 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 group-hover:scale-110">
+                    <Play className="h-10 w-10 ml-1" fill="#001233" />
+                  </button>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#001233] to-transparent p-4">
+                  <p className="text-white font-medium text-center">
+                    Assista ao vídeo para descobrir como o Manual Estoico pode transformar sua vida
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Primeira CTA */}
             <div className="bg-blue-900/30 border border-blue-800 rounded-lg p-6 md:p-8 text-center">
