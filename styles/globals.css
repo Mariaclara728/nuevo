@@ -105,3 +105,41 @@ body {
   height: auto;
   margin-right: 10px; /* Espaçamento entre as imagens */
 }
+
+/* Estilos para o carrossel de depoimentos com rolagem automática */
+.testimonial-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-container {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Ajuste o tempo conforme necessário */
+  width: fit-content;
+}
+
+.testimonial {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.testimonial img {
+  max-width: 300px; /* Ajuste conforme o tamanho desejado */
+  height: auto;
+}
+
+/* Animação para rolagem automática */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pausa a animação quando o mouse está sobre o carrossel */
+.testimonial-container:hover {
+  animation-play-state: paused;
+}
