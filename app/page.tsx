@@ -542,38 +542,24 @@ export default function Home() {
           </div>
 
           {/* Seção de Depoimentos */}
-<section>
-  <div className="testimonial-section">
-    <div className="testimonial-container">
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" alt="Depoimento 1" />
-      </div>
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" alt="Depoimento 2" />
-      </div>
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" alt="Depoimento 3" />
-      </div>
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" alt="Depoimento 4" />
-      </div>
-      
-      {/* Duplicação dos itens para criar efeito de loop infinito */}
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" alt="Depoimento 1" />
-      </div>
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" alt="Depoimento 2" />
-      </div>
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" alt="Depoimento 3" />
-      </div>
-      <div className="testimonial">
-        <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" alt="Depoimento 4" />
-      </div>
-    </div>
-  </div>
-</section>
+           <div className="testimonial-section">
+             <div className="testimonial-container">
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" alt="Depoimento 1" />
+              </div>
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" alt="Depoimento 2" />
+              </div>
+             <div className="testimonial">
+               <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" alt="Depoimento 3" />
+              </div>
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" alt="Depoimento 4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
           {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
           <div className="mt-12 pt-8 border-t border-blue-800/50">
