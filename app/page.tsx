@@ -96,6 +96,45 @@ const CountdownTimer = () => {
   )
 }
 
+export default function Home() {
+  // ... seu código existente ...
+
+  return (
+    <div className="flex flex-col min-h-screen bg-[#001233]">
+      <style jsx>{`
+        .testimonial-section {
+          overflow: hidden;
+          width: 100%;
+          background-color: #f0f0f0;
+          padding: 20px;
+        }
+        .testimonial-container {
+          display: flex;
+          width: calc(100% * 6);
+          animation: scroll 30s linear infinite;
+        }
+        .testimonial {
+          flex: 0 0 16.66%; /* 100% / 6 imagens */
+          max-width: 16.66%;
+          box-sizing: border-box;
+          padding: 10px;
+        }
+        .testimonial img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-100%); }
+        }
+      `}</style>
+
+      {/* Seu conteúdo JSX aqui */}
+    </div>
+  );
+}
+
 // Componente de notificação de compra recente
 const RecentPurchaseNotification = ({ onClose }: { onClose: () => void }) => {
   return (
