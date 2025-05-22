@@ -92,3 +92,35 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* CSS da seção de depoimentos */
+.testimonial-section {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  width: calc(100% * 6);
+  animation: scroll 30s linear infinite;
+}
+
+.testimonial {
+  flex: 0 0 16.66%;
+  max-width: 16.66%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.testimonial img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
