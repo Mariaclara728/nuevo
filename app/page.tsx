@@ -815,29 +815,6 @@ export default function Home() {
               </TabsContent>
             </Tabs>
 
-            {/* CTA Intermediária */}
-            <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Tudo Isso Por Apenas <span className="text-[#ffd700]">R$67</span>
-              </h3>
-              <p className="text-xl text-blue-200 mb-6">
-                Menos que o preço de um jantar para transformar sua mente para sempre
-              </p>
-              <Button
-                size="lg"
-                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
-                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
-              >
-                QUERO GARANTIR AGORA
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <div className="mt-4 text-blue-300 text-sm">
-                <div className="flex items-center justify-center">
-                  <AlertTriangle className="h-4 w-4 text-[#ffd700] mr-1" />
-                  <span>Apenas {spotsLeft} vagas disponíveis neste valor</span>
-                </div>
-              </div>
-            </div>
           </div>
             </div>
           </div>
@@ -1060,6 +1037,30 @@ export default function Home() {
               <ExpandableFAQ key={i} question={faq.question} answer={faq.answer} />
             ))}
           </div>
+
+         {/* CTA Intermediária */}
+            <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Tudo Isso Por Apenas <span className="text-[#ffd700]">R$67</span>
+              </h3>
+              <p className="text-xl text-blue-200 mb-6">
+                Menos que o preço de um jantar para transformar sua mente para sempre
+              </p>
+              <Button
+                size="lg"
+                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-lg h-14 px-8 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105"
+                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
+              >
+                QUERO GARANTIR AGORA
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <div className="mt-4 text-blue-300 text-sm">
+                <div className="flex items-center justify-center">
+                  <AlertTriangle className="h-4 w-4 text-[#ffd700] mr-1" />
+                  <span>Apenas {spotsLeft} vagas disponíveis neste valor</span>
+                </div>
+              </div>
+            </div>
 
           {/* CTA Final */}
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
