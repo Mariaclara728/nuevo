@@ -1061,16 +1061,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <p>
-              
-            </p>
-            <p>
-              
-            </p>
-            <p>
-              
-            </p>
 
+          <div className="mt-12 pt-8 border-t border-blue-800/50">
+            <div className="text-center mb-6">
+          <div className="max-w-3xl mx-auto text-center mb-12"></div>
+            </div>
+          </div>
 
           {/* CTA Final */}
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
