@@ -545,22 +545,16 @@ export default function Home() {
            <div className="testimonial-section">
              <div className="testimonial-container">
               <div className="testimonial">
-                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/Rafael-prova2.png" alt="Depoimento 1" />
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" alt="Depoimento 1" />
               </div>
               <div className="testimonial">
-                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/Andre-prova4.png" alt="Depoimento 2" />
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" alt="Depoimento 2" />
               </div>
              <div className="testimonial">
-               <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/Beatriz-prova4.png" alt="Depoimento 3" />
+               <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" alt="Depoimento 3" />
               </div>
               <div className="testimonial">
-                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/Carlos-prova2.png" alt="Depoimento 4" />
-              </div>
-              <div className="testimonial">
-                <img src="URL_IMAGEM_5" alt="Depoimento 5" />
-              </div>
-              <div className="testimonial">
-                <img src="URL_IMAGEM_6" alt="Depoimento 6" />
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" alt="Depoimento 4" />
               </div>
             </div>
           </div>
