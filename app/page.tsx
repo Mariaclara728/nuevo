@@ -11,4 +11,8 @@ export default function Home() {
   );
 }
 
+<<<<<<< HEAD
 Corrigindo página principal
+=======
+Corrigindo página principal
+>>>>>>> bd7423f5a31fedf75d927cf776c2ee8b6c52a738
