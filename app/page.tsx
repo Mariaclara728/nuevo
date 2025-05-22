@@ -1068,6 +1068,12 @@ export default function Home() {
               .
             </p>
 
+            <div className="w-full lg:w-1/2 relative">
+              <div className="relative mx-auto max-w-md">
+                {/* Decorative elements */}
+                <div className="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-[#ffd700]/30"></div>
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-[#ffd700]/30"></div>
+
           {/* CTA Final */}
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
             <Badge className="mb-6 bg-[#ffd700]/20 text-[#ffd700] hover:bg-[#ffd700]/20 border border-[#ffd700]/30 px-4 py-1.5">
