@@ -541,25 +541,69 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Seção de Depoimentos */}
-           <div className="testimonial-section">
-             <div className="testimonial-container">
-              <div className="testimonial">
-                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" alt="Depoimento 1" />
-              </div>
-              <div className="testimonial">
-                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" alt="Depoimento 2" />
-              </div>
-             <div className="testimonial">
-               <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" alt="Depoimento 3" />
-              </div>
-              <div className="testimonial">
-                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" alt="Depoimento 4" />
-              </div>
-            </div>
+import Image from 'next/image';
+
+// Seção de Depoimentos
+export default function TestimonialSection() {
+  return (
+    <section>
+      <div className="testimonial-section">
+        <div className="testimonial-container">
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" 
+              alt="Depoimento 1" 
+            />
+          </div>
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" 
+              alt="Depoimento 2" 
+            />
+          </div>
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" 
+              alt="Depoimento 3" 
+            />
+          </div>
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" 
+              alt="Depoimento 4" 
+            />
+          </div>
+          
+          {/* Duplicação dos itens para criar efeito de loop infinito */}
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" 
+              alt="Depoimento 1" 
+            />
+          </div>
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" 
+              alt="Depoimento 2" 
+            />
+          </div>
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" 
+              alt="Depoimento 3" 
+            />
+          </div>
+          <div className="testimonial">
+            <img 
+              src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" 
+              alt="Depoimento 4" 
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  );
+}
 
           {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
           <div className="mt-12 pt-8 border-t border-blue-800/50">
