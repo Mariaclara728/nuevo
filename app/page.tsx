@@ -541,59 +541,26 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
-            {[
-              {
-                name: "Carlos Mendes, 42",
-                role: "Vendedor",
-                image: "https://optimalhealthscout.shop/wp-content/uploads/2025/05/f256f28a41fc4b4e1427cc37874429da.jpg",
-                text: "Eu tinha crises de ansiedade antes de cada reunião de vendas. Após 14 dias aplicando os exercícios do Manual Estoico, consegui fazer uma apresentação para 30 clientes sem nenhum nervosismo. Minha produtividade aumentou 27%.",
-              },
-              {
-                name: "Mario Silva, 35",
-                role: "Pai de 3 filhos",
-                image: "https://optimalhealthscout.shop/wp-content/uploads/2025/05/06.png",
-                text: "Como Pai de 3 crianças, eu vivia no limite do estresse. O Manual Estoico me ensinou a separar o que posso controlar do que não posso. Agora consigo manter a calma mesmo nos dias mais caóticos. Meus filhos notaram a diferença.",
-              },
-              {
-                name: "Roberto Lima, 51",
-                role: "Recém-divorciado",
-                image: "https://optimalhealthscout.shop/wp-content/uploads/2025/05/05.png",
-                text: "Meu divórcio me deixou devastado. Pensamentos negativos consumiam meus dias. O Manual Estoico me deu ferramentas práticas para aceitar o que não posso mudar. Em 21 dias, voltei a dormir normalmente e retomei minha vida social.",
-              },
-            ].map((testimonial, i) => (
-              <div
-                key={i}
-                className="bg-blue-900/20 border border-blue-800/50 rounded-lg p-6 hover:bg-blue-900/30 transition-all duration-300 hover:scale-105 hover:border-blue-700"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="mr-4">
-                    <Image
-                      src={testimonial.image || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      width={60}
-                      height={60}
-                      className="rounded-full border-2 border-[#ffd700]/50"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white">{testimonial.name}</h4>
-                    <p className="text-sm text-blue-300">{testimonial.role}</p>
-                  </div>
-                </div>
-
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-[#ffd700] text-[#ffd700]" />
-                  ))}
-                </div>
-
-                <p className="text-blue-100 italic">"{testimonial.text}"</p>
+          {/* Seção de Depoimentos */}
+           <div className="testimonial-section">
+             <div className="testimonial-container">
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" alt="Depoimento 1" />
               </div>
-            ))}
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" alt="Depoimento 2" />
+              </div>
+             <div className="testimonial">
+               <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" alt="Depoimento 3" />
+              </div>
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" alt="Depoimento 4" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      
 
           {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
           <div className="mt-12 pt-8 border-t border-blue-800/50">
