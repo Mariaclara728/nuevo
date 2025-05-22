@@ -1073,7 +1073,7 @@ export default function Home() {
                 className="w-full bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4"
                 onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
               >
-                QUERO TRANSFORMAR MINHA <span>MENTE AGORA</span>
+                TRANSFORMAR MINHA MENTE AGORA
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
               <div className="flex items-center justify-center gap-2 text-blue-300 text-sm">
