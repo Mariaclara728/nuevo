@@ -845,28 +845,6 @@ export default function Home() {
       </section>
 
 
-
-            {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
-      <section className="py-16 bg-[#001233]">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <Badge className="mb-4 bg-[#ffd700]/20 text-[#ffd700] hover:bg-[#ffd700]/20 border border-[#ffd700]/30">
-              CONTEÚDO EXCLUSIVO
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Tudo Que Você Vai <span className="text-[#ffd700]">Receber</span>
-            </h2>
-            <p className="text-xl text-blue-200">
-              Um sistema completo para transformar sua mente através do Estoicismo
-            </p>
-          </div>
-
-
-        </div>
-      </section>
-
-
-
       {/* Segunda Dobra - Vídeo e Primeira CTA */}
 <section className="py-16 bg-[#001845]" ref={videoRef}>
         <div className="container mx-auto px-4">
