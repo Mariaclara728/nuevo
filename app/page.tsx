@@ -920,7 +920,7 @@ export default function Home() {
 
                     <p className="text-blue-100 mb-4">
                       Você tem 7 dias para avaliar o material. Se não ficar satisfeito por qualquer motivo, basta enviar
-                      um email para suporte@manualestocio.com.br e devolveremos seu dinheiro na hora.
+                      um email e devolveremos seu dinheiro na hora.
                     </p>
 
                     <p className="text-blue-100">
@@ -970,7 +970,7 @@ export default function Home() {
               {
                 question: "Como funciona a garantia?",
                 answer:
-                  "Você tem 7 dias para avaliar o material. Se não ficar satisfeito por qualquer motivo, basta enviar um email para suporte@manualestocio.com.br e devolveremos 100% do seu dinheiro, sem perguntas.",
+                  "Você tem 7 dias para avaliar o material. Se não ficar satisfeito por qualquer motivo, basta enviar um email e devolveremos 100% do seu dinheiro, sem perguntas.",
               },
             ].map((faq, i) => (
               <ExpandableFAQ key={i} question={faq.question} answer={faq.answer} />
