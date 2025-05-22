@@ -541,27 +541,25 @@ export default function Home() {
             </p>
           </div>
 
-export default function TestimonialSection() {
-  return (
-    <div className="testimonial-section">
-      <div className="testimonial-container">
-        {[1, 2, 3, 4, 1, 2, 3, 4].map((num, index) => (
-          <div className="testimonial" key={index}>
-            <img 
-              src={`https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-${
-                num === 1 ? 'Rafael-prova2' : 
-                num === 2 ? 'Carlos-prova2' : 
-                num === 3 ? 'Beatriz-prova4' : 
-                'Andre-prova4'
-              }.png`} 
-              alt={`Depoimento ${num}`} 
-            />
+          {/* Seção de Depoimentos */}
+           <div className="testimonial-section">
+             <div className="testimonial-container">
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Rafael-prova2.png" alt="Depoimento 1" />
+              </div>
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Carlos-prova2.png" alt="Depoimento 2" />
+              </div>
+             <div className="testimonial">
+               <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Beatriz-prova4.png" alt="Depoimento 3" />
+              </div>
+              <div className="testimonial">
+                <img src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/sem-Andre-prova4.png" alt="Depoimento 4" />
+              </div>
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+        </div>
+      </section>
 
           {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
           <div className="mt-12 pt-8 border-t border-blue-800/50">
