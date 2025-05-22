@@ -1061,6 +1061,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <p>
+              .
+            </p>
 
           {/* CTA Final */}
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded-xl p-8 border border-blue-800/50 shadow-xl text-center">
