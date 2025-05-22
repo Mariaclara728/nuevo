@@ -1085,12 +1085,4 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Chat Button */}
-      <div className="fixed bottom-20 right-6 z-30">
-        <button className="bg-[#ffd700] text-[#001233] rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-[#e6c200] transition-colors duration-300">
-          <MessageCircle className="h-8 w-8" />
-        </button>
-      </div>
-    </div>
-  )
 }
