@@ -92,3 +92,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* CSS para redimensionamento e rolagem */
+.image-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px; /* Espaçamento entre as imagens */
+}
