@@ -1089,38 +1089,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Flutuante */}
-      {showFloatingCTA && (
-        <div className="fixed bottom-0 left-0 right-0 bg-[#001233] border-t border-blue-800 py-3 z-40 animate-slide-up">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col sm:flex-row items-center justify-between">
-              <div className="flex items-center mb-2 sm:mb-0">
-                <div className="mr-3 hidden md:block">
-                  <h3 className="font-bold text-white">Manual Estoico Revelado</h3>
-                  <div className="flex items-center">
-                    <span className="text-sm text-blue-300 line-through mr-2">R$197</span>
-                    <span className="text-[#ffd700] font-bold">R$67</span>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-[#ffd700] mr-2" />
-                  <span className="text-blue-200 text-sm">
-                    Oferta expira em: {11}:{45}:{19}
-                  </span>
-                </div>
-              </div>
-              <Button
-                size="sm"
-                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] rounded-full px-6"
-                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
-              >
-                GARANTIR ACESSO POR R$67
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Notificação de compra recente */}
       {showNotification && <RecentPurchaseNotification onClose={() => setShowNotification(false)} />}
