@@ -883,7 +883,7 @@ export default function Home() {
       </section>
 
 
-      {/* Quinta Dobra - Depoimentos e Garantia */}
+      {/* Quinta Dobra - Garantia */}
       <section className="py-16 bg-gradient-to-b from-[#001233] to-[#001845]">
         <div className="container mx-auto px-4">
 
@@ -892,13 +892,16 @@ export default function Home() {
             <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/40 rounded-xl p-8 border border-blue-800/50 shadow-xl">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/3 flex justify-center">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-[#ffd700]/20 rounded-full animate-ping"></div>
-                    <div className="relative bg-[#ffd700]/10 rounded-full p-6">
-                      <Shield className="h-24 w-24 text-[#ffd700]" />
-                    </div>
-                  </div>
+                 <div className="relative">
+                  <div className="absolute inset-0 bg-[#ffd700]/20 rounded-full animate-ping"></div>
+                  <div className="relative bg-[#ffd700]/10 rounded-full p-6">
+                  <img 
+                   src="https://optimalhealthscout.shop/wp-content/uploads/2025/05/Etiqueta-selo-de-garantia-moderno-em-dourado-1.png" 
+                   alt="Garantia" 
+                   className="h-24 w-24"/>
+                 </div>
                 </div>
+              </div>
 
                 <div className="md:w-2/3">
                   <h2 className="text-3xl font-bold text-white mb-4">Garantia Incondicional de 7 Dias</h2>
