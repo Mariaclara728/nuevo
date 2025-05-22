@@ -1089,7 +1089,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Notificação de compra recente */}
       {showNotification && <RecentPurchaseNotification onClose={() => setShowNotification(false)} />}
 
@@ -1102,19 +1101,16 @@ export default function Home() {
               <span className="text-xl font-bold text-white">Manual Estoico</span>
             </div>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-sm">
-              <Link href="#" className="hover:text-white transition-colors">
+              <Link href="" className="hover:text-white transition-colors">
                 Termos de Uso
               </Link>
-              <Link href="#" className="hover:text-white transition-colors">
+              <Link href="" className="hover:text-white transition-colors">
                 Política de Privacidade
-              </Link>
-              <Link href="#" className="hover:text-white transition-colors">
-                Contato
               </Link>
             </div>
           </div>
           <div className="mt-8 text-center text-sm">
-            <p>© {new Date().getFullYear()} Manual Estoico. Todos os direitos reservados.</p>
+            <p>© {new Date().getFullYear()} Manual Estoico - Liberdade Moderna. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
