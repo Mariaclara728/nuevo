@@ -598,81 +598,25 @@ export default function Home() {
           {/* Social proof */}
           <div className="mt-12 pt-8 border-t border-blue-800/50">
             <div className="text-center mb-6">
-              <p className="text-blue-200 text-sm uppercase tracking-wider">Recomendado por</p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-8 opacity-70">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <div key={i} className="h-12 w-24 bg-blue-200/10 rounded flex items-center justify-center">
-                  <div className="text-blue-100 text-xs">LOGO #{i + 1}</div>
-                </div>
-              ))}
-            </div>
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <Badge className="mb-4 bg-[#ffd700]/20 text-[#ffd700] hover:bg-[#ffd700]/20 border border-[#ffd700]/30">
+              CONTEÚDO EXCLUSIVO
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Tudo Que Você Vai <span className="text-[#ffd700]">Receber</span>
+            </h2>
+            <p className="text-xl text-blue-200">
+              Um sistema completo para transformar sua mente através do Estoicismo
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* Segunda Dobra - Vídeo e Primeira CTA */}
-<section className="py-16 bg-[#001845]" ref={videoRef}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-
-
-          {/* Contador regressivo */}
-          <div className="max-w-4xl mx-auto mb-8 bg-blue-900/30 border border-blue-800/50 rounded-lg p-3 text-center">
-            <p className="text-blue-200 text-sm mb-1">ESTA OFERTA ESPECIAL EXPIRA EM:</p>
-            <CountdownTimer />
-          </div>
-
-            {/* Primeira CTA */}
-            <div className="bg-blue-900/30 border border-blue-800 rounded-lg p-6 md:p-8 text-center">
-              <div className="mb-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Transforme Sua Mente Por Apenas{" "}
-                  <span className="text-[#ffd700]">
-                    R$67<span className="text-sm align-top ml-1">à vista</span>
-                  </span>
-                </h2>
-                <p className="text-xl text-blue-200">ou em até 12x de R$6,70 no cartão</p>
-              </div>
-
-              <Button
-                size="lg"
-                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 px-10 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4 w-full md:w-auto"
-                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
-              >
-                MUDAR MINHA VIDA AGORA
-                <ArrowRight className="ml-2 h-6 w-6" />
-              </Button>
-
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
-                <div className="flex items-center">
-                  <Shield className="h-5 w-5 text-[#ffd700] mr-2" />
-                  <span className="text-blue-200 text-sm">Garantia de 7 dias</span>
-                </div>
-                <div className="flex items-center">
-                  <Lock className="h-5 w-5 text-[#ffd700] mr-2" />
-                  <span className="text-blue-200 text-sm">Pagamento 100% seguro</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2" />
-                  <span className="text-blue-200 text-sm">Acesso imediato</span>
-                </div>
-              </div>
-
-              <div className="flex justify-center gap-2 mt-4">
-                {["Visa", "Master", "Pix", "Boleto"].map((method, i) => (
-                  <div key={i} className="bg-blue-900/50 text-blue-200 text-xs px-2 py-1 rounded">
-                    {method}
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
       </section>
 
 
-      {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
+
+            {/* Quarta Dobra - Conteúdo do Curso e Bônus */}
       <section className="py-16 bg-[#001233]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -919,6 +863,69 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
+      {/* Segunda Dobra - Vídeo e Primeira CTA */}
+<section className="py-16 bg-[#001845]" ref={videoRef}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+
+
+          {/* Contador regressivo */}
+          <div className="max-w-4xl mx-auto mb-8 bg-blue-900/30 border border-blue-800/50 rounded-lg p-3 text-center">
+            <p className="text-blue-200 text-sm mb-1">ESTA OFERTA ESPECIAL EXPIRA EM:</p>
+            <CountdownTimer />
+          </div>
+
+            {/* Primeira CTA */}
+            <div className="bg-blue-900/30 border border-blue-800 rounded-lg p-6 md:p-8 text-center">
+              <div className="mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Transforme Sua Mente Por Apenas{" "}
+                  <span className="text-[#ffd700]">
+                    R$67<span className="text-sm align-top ml-1">à vista</span>
+                  </span>
+                </h2>
+                <p className="text-xl text-blue-200">ou em até 12x de R$6,70 no cartão</p>
+              </div>
+
+              <Button
+                size="lg"
+                className="bg-[#ffd700] hover:bg-[#e6c200] text-[#001233] text-xl h-16 px-10 rounded-full font-bold shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 mb-4 w-full md:w-auto"
+                onClick={() => window.location.href = "https://pay.cakto.com.br/34ajqm9_394962"}
+              >
+                MUDAR MINHA VIDA AGORA
+                <ArrowRight className="ml-2 h-6 w-6" />
+              </Button>
+
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
+                <div className="flex items-center">
+                  <Shield className="h-5 w-5 text-[#ffd700] mr-2" />
+                  <span className="text-blue-200 text-sm">Garantia de 7 dias</span>
+                </div>
+                <div className="flex items-center">
+                  <Lock className="h-5 w-5 text-[#ffd700] mr-2" />
+                  <span className="text-blue-200 text-sm">Pagamento 100% seguro</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-[#ffd700] mr-2" />
+                  <span className="text-blue-200 text-sm">Acesso imediato</span>
+                </div>
+              </div>
+
+              <div className="flex justify-center gap-2 mt-4">
+                {["Visa", "Master", "Pix", "Boleto"].map((method, i) => (
+                  <div key={i} className="bg-blue-900/50 text-blue-200 text-xs px-2 py-1 rounded">
+                    {method}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Quinta Dobra - Depoimentos e Garantia */}
       <section className="py-16 bg-gradient-to-b from-[#001233] to-[#001845]">
